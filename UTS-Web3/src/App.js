@@ -1,3 +1,5 @@
+import React from 'react';
+import './App.css'
 import {
   BrowserRouter,
   Switch,
@@ -5,6 +7,7 @@ import {
 from "react-router-dom";
 import Header from "./Header";
 import Blog from "./Blog";
+import BlogDetail from "./BlogDetail";
 
 //install bootstrap dulu
 import 'bootstrap/dist/css/bootstrap.min.css';
