@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 
 function ArticleCard(prop) {
-  const { id, categoryName, title } = prop;
+  const { id, categoryName, title, postedAt,summary,imageUrl } = prop;
   return (
     <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
       <div className="col p-4 d-flex flex-column position-static">
@@ -84,3 +84,4 @@ class Blog extends React.Component {
   }
 }
 
+export default Blog;

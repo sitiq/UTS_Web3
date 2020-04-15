@@ -3,8 +3,8 @@ import './App.css'
 import {
   BrowserRouter,
   Switch,
-} 
-from "react-router-dom";
+}from "react-router-dom";
+
 import Header from "./Header";
 import Blog from "./Blog";
 import BlogDetail from "./BlogDetail";
@@ -12,10 +12,12 @@ import BlogDetail from "./BlogDetail";
 //install bootstrap dulu
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 // Ini merupakan functional component
 // https://getbootstrap.com/docs/4.4/examples/navbar-static/
 function App() {
   return (
+    
     <BrowserRouter>
       <div className="App">
         <Header />
@@ -23,7 +25,7 @@ function App() {
           <Route path="/about">
             About
           </Route>
-          <Route path="/blog/:articleId" component="" />
+          <Route path="/blog/:articleId" component={BlogDetail} />
           <Route path="/blog">
             <Blog />
           </Route>
@@ -36,3 +38,4 @@ function App() {
   );
 }
 
+export default App;
