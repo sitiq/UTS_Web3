@@ -40,7 +40,7 @@ function ArticleCard(props) {
   );
 }
 
-class DetailBlog extends React.Component {
+class BlogDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

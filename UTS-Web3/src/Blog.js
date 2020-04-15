@@ -19,7 +19,7 @@ function ArticleCard(prop) {
         </Link>
       </div>
       <div className="col-auto d-none d-lg-block">
-        <img
+        <img src={imageUrl}
           className="bd-placeholder-img"
           width="200"
           height="250"
